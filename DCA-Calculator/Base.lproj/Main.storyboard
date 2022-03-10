@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="88" id="gVH-nd-5BJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="88" id="gVH-nd-5BJ" customClass="SearchTableViewCell" customModule="DCA_Calculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gVH-nd-5BJ" id="gHq-15-DOO">
@@ -35,7 +35,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phS-zJ-tQw">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equity USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phS-zJ-tQw">
                                                             <rect key="frame" x="0.0" y="54" width="196" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="EOq-tS-SkU"/>
@@ -69,6 +69,11 @@
                                         <constraint firstItem="Huw-rt-U3D" firstAttribute="leading" secondItem="gHq-15-DOO" secondAttribute="leading" constant="16" id="sYQ-Eg-p8N"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="assetNameLbl" destination="jWv-1I-dl9" id="fXU-da-42p"/>
+                                    <outlet property="assetSymbolLbl" destination="ErD-yb-I2t" id="vDY-Bf-Qpx"/>
+                                    <outlet property="assetTypeLbl" destination="phS-zJ-tQw" id="TU7-xT-iwd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
